@@ -1,0 +1,93 @@
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/993/original/sky.jpg?1657454006);
+  background-size: cover;
+}
+
+/* Top Part */
+
+.container-fluid {
+  margin: 8% auto;
+  max-width: 45%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.top-item {
+  background-image: linear-gradient(
+    90deg,
+    #020024 0%,
+    #090979 35%,
+    #eff4f5 100%
+  );
+  color: #fff;
+}
+
+.temp-menu {
+  padding-left: 25px;
+}
+
+.main-temp {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.degree {
+  display: inline;
+  font-size: 25px;
+  margin: 0;
+}
+
+.weather-type {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.conditions {
+  font-size: 13px;
+}
+
+.vertical-bar {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.center-icon {
+  width: 50%;
+}
+
+.imo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-city {
+  font-size: 40px;
+}
+
+/* Bottom Part */
+
+.bottom-item {
+  color: #09127f;
+}
+
+.cities {
+  font-weight: 600;
+}
+
+.line-vertical {
+  border-right: 2px solid #09127f;
+  margin: 10px 0;
+}
+
+.day {
+  font-weight: 600;
+}
+
+.icon {
+  width: 40%;
+}
+
+.temp {
+  font-size: 17px;
+  font-weight: 500;
+}

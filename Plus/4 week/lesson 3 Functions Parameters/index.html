@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1>Functions Parameters</h1>
+   <div id="app"></div>
+   <script>
+      // Challenge
+      // 1. Create a function isWindy
+      // 2. Add a speed parameter to the function
+      // 3. If speed is greater than 5, alert ‘It is windy’
+      // 4. Else, alert ‘It is not windy’
+      // 5. Call the function twice with different arguments to test both scenarios
+
+      function isWindy(speed) {
+         if (speed > 5) {
+            alert(`It is windy`);
+         } else {
+            alert(`It is not windy`);
+         }
+      }
+      isWindy(2);
+      isWindy(prompt(`What is the wind speed?`));
+
+
+   </script>
+</body>
+
+</html>

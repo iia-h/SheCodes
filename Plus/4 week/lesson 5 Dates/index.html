@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1>Functions Parameters</h1>
+   <div id="app"></div>
+   <script>
+      // Challenge 1
+      let now = new Date();
+      console.log(new Date());
+      // Challenge 2
+      console.log(now.getMilliseconds());
+      // Challenge 3
+      console.log(now.getDay());
+      // Challenge 4
+      console.log(now.getFullYear());
+      // Challenge 5
+      console.log(now.getMonth());
+
+      // Challenge 6
+      let week = [
+         "Sunday",
+         "Monday",
+         "Thursday",
+         "Wednesday",
+         "Thursday",
+         "Friday",
+         "Saturday"
+      ];
+      let day = week[now.getDay()];
+      let months = [
+         "January",
+         "February",
+         "March",
+         "April",
+         "May",
+         "June",
+         "July",
+         "August",
+         "September",
+         "October",
+         "November",
+         "December"
+      ];
+      let month = months[now.getMonth()];
+      let date = now.getDate();
+      let year = now.getFullYear();
+
+      console.log(`Today is ${day}, ${month} ${date}, ${year}`);
+
+      // Challenge 7
+
+      function formatDate(now) {
+         let week = [
+            "Sunday",
+            "Monday",
+            "Thursday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+         ];
+         let day = week[now.getDay()];
+         let months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+         ];
+         let month = months[now.getMonth()];
+         let date = now.getDate();
+         let year = now.getFullYear();
+
+         let currentDate = `${day}, ${month} ${date}, ${year}`;
+         return currentDate;
+      }
+      console.log(formatDate(now));
+
+      // or
+
+      let currentDate = new Date();
+      function formatDate(date) {
+
+         let week = [
+            "Sunday",
+            "Monday",
+            "Thursday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+         ];
+         let day = week[date.getDay()];
+         let months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+         ];
+         let month = months[date.getMonth()];
+         let number = date.getDate();
+         let year = date.getFullYear();
+
+         let result = `${day}, ${month} ${number}, ${year}`;
+         return result;
+      }
+      console.log(formatDate(currentDate));
+      console.log(formatDate(new Date('1989, 01, 18')));
+
+   </script>
+</body>
+
+</html>

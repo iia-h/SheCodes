@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      let weather = {};
+      console.log(weather);
+
+      weather = {
+         temp: 25,
+         humidity: 13
+      };
+      console.log(weather);
+
+      console.log(weather.humidity);
+      console.log(weather.temp);
+
+      weather.windSpeed = 5;
+      console.log(weather.windSpeed);
+
+      console.log(weather["windSpeed"]);
+      console.log(weather["temp"]);
+      console.log(weather["humidity"]);
+
+      let forecast = [
+         {
+            day: "Monday",
+            temp: 19
+         },
+         {
+            day: "Tuesday",
+            temp: 24
+         },
+         {
+            day: "Wednesday",
+            temp: 22
+         },
+         {
+            day: "Thursday",
+            temp: 20
+         },
+         {
+            day: "Friday",
+            temp: 18
+         },
+         {
+            day: "Saturday",
+            temp: 16
+         },
+         {
+            day: "Sunday",
+            temp: 21
+         }
+      ];
+
+      console.log(forecast);
+
+      console.log(forecast[0].temp);
+      console.log(forecast[0].day);
+
+      console.log(
+         `The temperature for the day after tomorrow will be ${forecast[0 + 1].temp
+         } degree.`
+      );
+
+
+   </script>
+</body>
+
+</html>
