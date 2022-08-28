@@ -1,0 +1,39 @@
+:root {
+  --title-color: #855ff0;
+  --primary-color: #fc709b;
+  --box-color: #f8c74a7a;
+  --page-gradient: linear-gradient(
+    193deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+body {
+  font-family: sans-serif;
+  padding: 0 20px;
+  background: var(--page-gradient);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  margin: 0;
+  font-size: 34px;
+  line-height: 48px;
+  color: var(--title-color);
+}
+
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+.logo {
+  display: block;
+  margin: 30px auto;
+  width: 150px;
+}
+
+p {
+  background-color: var(--box-color);
+}
